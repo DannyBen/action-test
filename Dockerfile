@@ -1,3 +1,5 @@
 FROM alpine
 WORKDIR /app
-ENTRYPOINT entrypoint.sh
+COPY entrypoint.sh .
+RUN chmod +x entrypoint.sh
+ENTRYPOINT ["/app/entrypoint.sh"]
