@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  test: &default
+    build: .
+    image: temp
+
+  bash:
+    <<: *default
+    entrypoint: sh

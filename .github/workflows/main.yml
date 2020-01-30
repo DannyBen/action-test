@@ -12,8 +12,7 @@ jobs:
 
     - name: Debug
       run: |
-        pwd
-        ls -la
+        find / -type d
         cat test.txt
 
 
