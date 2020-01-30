@@ -1,0 +1,18 @@
+name: My Action Test
+description: Test action creation
+author: Danny Ben Shitrit
+
+branding:
+  icon: "check"
+  color: "green"
+
+inputs: 
+  text:
+    description: Some text
+    default: Hello World
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+  - ${{ inputs.text }}
