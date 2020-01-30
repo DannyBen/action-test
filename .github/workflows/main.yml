@@ -1,0 +1,19 @@
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Test that action
+    steps:
+    - name: Hello world action step
+      uses: dannyben/action-test@master
+      with:
+        text: 'Mona the Octocat'
+
+    - name: Debug
+      run: |
+        pwd
+        ls -la
+        cat test.txt
+
+
