@@ -9,9 +9,3 @@ jobs:
       uses: dannyben/action-test@master
       with:
         text: 'Mona the Octocat'
-
-    - name: Debug
-      run: |
-        ls /github/home
-        ls /github/workflow
-        ls /github/workspace
