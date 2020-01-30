@@ -12,7 +12,6 @@ jobs:
 
     - name: Debug
       run: |
-        find / -type d
-        cat test.txt
-
-
+        ls /github/home
+        ls /github/workflow
+        ls /github/workspace
