@@ -5,6 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Test that action
     steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
     - name: Hello world action step
       # uses: dannyben/action-test@master
       uses: ./
