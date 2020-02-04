@@ -6,6 +6,7 @@ jobs:
     name: Test that action
     steps:
     - name: Hello world action step
-      uses: dannyben/action-test@master
+      # uses: dannyben/action-test@master
+      uses: ./
       with:
-        text: 'Mona the Octocat'
+        text: 'Thor the god of thunder'
