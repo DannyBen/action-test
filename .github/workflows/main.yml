@@ -1,13 +1,16 @@
 name: Experiment
-
-on:
-  schedule:
-    - cron: "13 05 4,10,25 * *"
+on: [push]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
-
+    name: Test that action
     steps:
-    - name: Debug
-      run: echo "Works"
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Hello world action step
+      # uses: dannyben/action-test@master
+      uses: ./
+      with:
+        text: 'Thor the god of thunder'
